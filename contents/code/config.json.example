@@ -1,8 +1,0 @@
-{
-  "shortcutIdPrefix": "AppToggler",
-  "apps": [
-    {"shortcut": "Meta+M", "query": "firefox", "resourceName": "firefox"},
-    {"shortcut": "Meta+T", "query": "Terminal", "caption": "Terminal"},
-    {"shortcut": "Meta+C", "query": "code", "resourceName": "code"}
-  ]
-}
