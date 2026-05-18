@@ -1,3 +1,6 @@
+# howto
+`kpackagetool6 -t KWin/Script --remove toggleTheApp ; kpackagetool6 -t KWin/Script --install .`
+
 # Plasma windows toggler
 
 A KWin script that provides quick keyboard shortcuts to toggle application windows. Press a shortcut to bring an application window to focus, or minimize it if it's already active. If the application isn't running, it will be launched automatically via KRunner.
