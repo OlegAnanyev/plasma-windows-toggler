@@ -1,5 +1,11 @@
-# howto
+# Fork reasons
+A separate config file didn't work on my system.
+
+# Reload
 `kpackagetool6 -t KWin/Script --remove toggleTheApp ; kpackagetool6 -t KWin/Script --install .`
+
+-----
+
 
 # Plasma windows toggler
 
