@@ -1,7 +1,10 @@
-# Fork reasons
-A separate config file didn't work on my system.
+# Зачем форк
+На моей системе конфиг из отдельного файла не грузился.
 
-# Reload
+# Hotkeys
+Не всегда нормально чистятся хоткеи, см. `~/.config/kglobalshortcutsrc`
+
+# Релоадить скрипт так
 `kpackagetool6 -t KWin/Script --remove toggleTheApp ; kpackagetool6 -t KWin/Script --install .`
 
 -----
