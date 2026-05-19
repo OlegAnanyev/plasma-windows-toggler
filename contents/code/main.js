@@ -9,7 +9,8 @@ const config = {
     {"shortcut": "Meta+O", "query": "obsidian", "resourceName": "obsidian", "caption": "Obsidian"},
     {"shortcut": "Meta+F", "query": "telegram", "resourceName": "telegram-desktop", "caption": "Telegram"},
     {"shortcut": "Meta+M", "query": "time", "caption": "Time Web"},
-    {"shortcut": "Meta+K", "query": "time", "caption": "Толк"}
+    {"shortcut": "Meta+K", "query": "ktalk", "caption": "Толк"},
+    {"shortcut": "Meta+C", "query": "calendar", "caption": "Google Calendar"}
     // {"shortcut": "Ctrl+Alt+K", "query": "keepass", "resourceName": "keepassxc KeePassXC", "caption": "KeePassXC"},
   ]
 };
