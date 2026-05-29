@@ -11,8 +11,8 @@ const config = {
     {"shortcut": "Meta+F", "query": "telegram", "resourceName": "telegram-desktop", "caption": "Telegram"},
     {"shortcut": "Meta+M", "query": "time", "caption": "Time Web"},
     {"shortcut": "Meta+K", "query": "ktalk", "caption": "Толк"},
-    {"shortcut": "Meta+C", "query": "calendar", "caption": "Google Calendar"}
-    // {"shortcut": "Ctrl+Alt+K", "query": "keepass", "resourceName": "keepassxc KeePassXC", "caption": "KeePassXC"},
+    {"shortcut": "Meta+C", "query": "calendar", "caption": "Google Calendar"},
+    {"shortcut": "Ctrl+Alt+K", "query": "keepass", "resourceName": "keepassxc KeePassXC", "caption": "KeePassXC"}
   ]
 };
 
