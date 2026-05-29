@@ -2,13 +2,17 @@
 На моей системе конфиг из отдельного файла не грузился вообще.
 
 # Бонусы
-Параметр `desktopOnly` для хоткея позволяет использовать хоткей только на активном рабочем столе (т.е. можно иметь два окна chromium на двух разных рабочих столах и Win+B будет активировать только chromium на теккущем рабочем столе).
+Параметр `desktopOnly` для хоткея позволяет использовать хоткей только на активном рабочем столе (т.е. можно иметь два окна chromium на двух разных рабочих столах и Win+B будет активировать только chromium на текущем рабочем столе).
 
 # Hotkeys
 Не всегда нормально чистятся хоткеи, см. `~/.config/kglobalshortcutsrc`
 
-# Релоадить скрипт так
-`kpackagetool6 -t KWin/Script --remove toggleTheApp ; kpackagetool6 -t KWin/Script --install .`
+# Надёжно зарелоадить скрипт можно так
+- выключаем в KWin
+- `kpackagetool6 -t KWin/Script --remove toggleTheApp`
+- вычищаем хоткеи из `~/.config/kglobalshortcutsrc`
+- `kpackagetool6 -t KWin/Script --install .`
+- выключаем в KWin
 
 -----
 
