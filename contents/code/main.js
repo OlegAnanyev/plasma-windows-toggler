@@ -64,9 +64,7 @@ function getToggleAppFunction(resName, caption, krunnerQuery, excludeCaptions, d
         });
 
         if (client) {
-            //console.error("TOGGLER – matched window:", client.caption,
-                            "minimized:", client.minimized,
-                            "active:", workspace.activeWindow === client);
+            //console.error("TOGGLER – matched window:", client.caption, "minimized:", client.minimized, "active:", workspace.activeWindow === client);
             if (workspace.activeWindow === client && !client.minimized) {
                 //console.error("TOGGLER – minimizing");
                 client.minimized = true;
