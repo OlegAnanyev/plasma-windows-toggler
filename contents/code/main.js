@@ -12,6 +12,7 @@ const config = {
         {"shortcut": "Meta+M", "query": "time", "caption": "Time Web"},
         {"shortcut": "Meta+K", "query": "ktalk", "caption": "Толк"},
         {"shortcut": "Meta+C", "query": "calendar", "caption": "Google Calendar"},
+        {"shortcut": "Meta+R", "query": "vscodium", "resourceName": "codium", "caption": "VSCodium"},
         {"shortcut": "Ctrl+Alt+K", "query": "keepass", "resourceName": "keepassxc KeePassXC", "caption": "KeePassXC"}
     ]
 };
