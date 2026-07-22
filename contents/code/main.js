@@ -2,8 +2,8 @@
 const config = {
     shortcutIdPrefix: "AppToggler1",
     apps: [
-        {"shortcut": "Meta+X", "query": "firefox", "resourceName": "firefox", "caption": "firefox"},
-        {"shortcut": "Meta+B", "query": "chromium", "resourceName": "chromium", "caption": "Chromium", "desktopOnly": true},
+        {"shortcut": "Meta+B", "query": "firefox", "resourceName": "firefox", "caption": "firefox"},
+        {"shortcut": "Meta+X", "query": "chromium", "resourceName": "chromium", "caption": "Chromium", "desktopOnly": true},
         {"shortcut": "Meta+E", "query": "dolphin", "resourceName": "dolphin", "caption": "Dolphin"},
         {"shortcut": "Meta+T", "query": "termius", "resourceName": "termius", "caption": "termius"},
         {"shortcut": "Meta+V", "query": "vscode", "resourceName": "electron code-oss", "caption": "Code - OSS"},
