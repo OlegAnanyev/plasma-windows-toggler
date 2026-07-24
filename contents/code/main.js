@@ -8,7 +8,7 @@ const config = {
         {"shortcut": "Meta+T", "query": "termius", "resourceName": "termius", "caption": "termius"},
         {"shortcut": "Meta+V", "query": "vscode", "resourceName": "electron code-oss", "caption": "Code - OSS"},
         {"shortcut": "Meta+O", "query": "obsidian", "resourceName": "obsidian", "caption": "Obsidian"},
-        {"shortcut": "Meta+F", "query": "telegram", "resourceName": "org.telegram.desktop", "caption": "Telegram"},
+        {"shortcut": "Meta+F", "query": "telegram", "resourceName": "Telegram org.telegram.desktop", "caption": "Telegram"},
         {"shortcut": "Meta+M", "query": "time", "caption": "Time Web"},
         {"shortcut": "Meta+K", "query": "ktalk", "caption": "Толк"},
         {"shortcut": "Meta+C", "query": "calendar", "caption": "Google Calendar"},
