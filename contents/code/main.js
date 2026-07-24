@@ -8,12 +8,11 @@ const config = {
         {"shortcut": "Meta+T", "query": "termius", "resourceName": "termius", "caption": "termius"},
         {"shortcut": "Meta+V", "query": "vscode", "resourceName": "electron code-oss", "caption": "Code - OSS"},
         {"shortcut": "Meta+O", "query": "obsidian", "resourceName": "obsidian", "caption": "Obsidian"},
-        {"shortcut": "Meta+F", "query": "telegram", "resourceName": "telegram", "caption": "Telegram"},
+        {"shortcut": "Meta+F", "query": "telegram", "resourceName": "Telegram", "caption": "Telegram"},
         {"shortcut": "Meta+M", "query": "time", "caption": "Time Web"},
         {"shortcut": "Meta+K", "query": "ktalk", "caption": "Толк"},
         {"shortcut": "Meta+C", "query": "calendar", "caption": "Google Calendar"},
-        {"shortcut": "Meta+R", "query": "vscodium", "resourceName": "codium", "caption": "VSCodium"},
-        {"shortcut": "Ctrl+Alt+K", "query": "keepass", "resourceName": "keepassxc KeePassXC", "caption": "KeePassXC"}
+        {"shortcut": "Meta+R", "query": "vscodium", "resourceName": "codium", "caption": "VSCodium"}
     ]
 };
 
