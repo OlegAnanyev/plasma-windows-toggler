@@ -9,8 +9,8 @@ const config = {
         {"shortcut": "Meta+V", "query": "vscode", "resourceName": "electron code-oss", "caption": "Code - OSS"},
         {"shortcut": "Meta+O", "query": "obsidian", "resourceName": "obsidian", "caption": "Obsidian"},
         {"shortcut": "Meta+F", "query": "telegram", "resourceName": "Telegram", "caption": "Telegram"},
-        {"shortcut": "Meta+M", "query": "time", "resourceName": "FFPWA-01KZE7RDHT05JAFN59ZCXJC8NV", "caption": "Time"},
-        {"shortcut": "Meta+K", "query": "ktalk", "resourceName": "FFPWA-01KZE8Q2HN7A1N1V1DBW3KRK59", "caption": "Толк"},
+        {"shortcut": "Meta+M", "query": "time desktop", "resourceName": "Time", "caption": "Time Desktop"},
+        {"shortcut": "Meta+K", "query": "толк", "resourceName": "ktalk", "caption": "Толк"},
         {"shortcut": "Meta+C", "query": "calendar", "caption": "Google Calendar"},
         {"shortcut": "Meta+R", "query": "vscodium", "resourceName": "codium", "caption": "VSCodium"}
     ]
