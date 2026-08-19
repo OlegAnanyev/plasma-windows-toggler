@@ -5,7 +5,7 @@ const config = {
         {"shortcut": "Meta+B", "query": "firefox", "resourceName": "firefox", "caption": "firefox", "desktopOnly": true},
         {"shortcut": "Meta+X", "query": "waterfox", "resourceName": "waterfox", "caption": "waterfox"},
         {"shortcut": "Meta+E", "query": "dolphin", "resourceName": "dolphin", "caption": "Dolphin"},
-        {"shortcut": "Meta+T", "query": "termius", "resourceName": "termius", "caption": "termius"},
+        {"shortcut": "Meta+T", "query": "alacritty", "resourceName": "Alacritty"},
         {"shortcut": "Meta+V", "query": "vscode", "resourceName": "electron code-oss", "caption": "Code - OSS"},
         {"shortcut": "Meta+O", "query": "obsidian", "resourceName": "obsidian", "caption": "Obsidian"},
         {"shortcut": "Meta+F", "query": "telegram", "resourceName": "Telegram", "caption": "Telegram"},
