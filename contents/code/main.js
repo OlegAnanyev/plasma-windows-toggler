@@ -2,7 +2,7 @@
 const config = {
     shortcutIdPrefix: "AppToggler1",
     apps: [
-        {"shortcut": "Meta+B", "query": "firefox", "resourceName": "firefox", "caption": "firefox", "desktopOnly": true},
+        {"shortcut": "Meta+B", "query": "firefox", "resourceName": "firefox", "caption": "firefox", "excludeCaptions": ["Microsoft Teams", "MAX"], "desktopOnly": true},
         {"shortcut": "Meta+X", "query": "waterfox", "resourceName": "waterfox", "caption": "Waterfox"},
         {"shortcut": "Meta+E", "query": "dolphin", "resourceName": "dolphin", "caption": "Dolphin"},
         {"shortcut": "Meta+T", "query": "kitty", "resourceName": "kitty", "caption": "Kitty"},
