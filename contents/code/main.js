@@ -3,7 +3,7 @@ const config = {
     shortcutIdPrefix: "AppToggler1",
     apps: [
         {"shortcut": "Meta+B", "query": "firefox", "resourceName": "firefox", "caption": "firefox", "desktopOnly": true},
-        {"shortcut": "Meta+X", "query": "waterfox", "resourceName": "waterfox", "caption": "waterfox"},
+        {"shortcut": "Meta+X", "query": "waterfox", "resourceName": "waterfox", "caption": "Waterfox"},
         {"shortcut": "Meta+E", "query": "dolphin", "resourceName": "dolphin", "caption": "Dolphin"},
         {"shortcut": "Meta+T", "query": "kitty", "resourceName": "Kitty", "caption": "Kitty"},
         {"shortcut": "Meta+V", "query": "vscode", "resourceName": "electron code-oss", "caption": "Code - OSS"},
@@ -36,7 +36,7 @@ function getToggleAppFunction(resName, caption, krunnerQuery, excludeCaptions, d
 
         const client = clients.find(function (client) {
             // Match resource name or caption
-            const matchesResource = (resName && client.resourceName === resName) ||
+            const matchesResource = (resName && client.resourceName && client.resourceName.includes(resName)) ||
                                     (caption && client.caption.includes(caption));
             if (!matchesResource) return false;
 
