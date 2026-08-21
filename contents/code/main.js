@@ -11,7 +11,6 @@ const config = {
         {"shortcut": "Meta+F", "query": "telegram", "resourceName": "Telegram", "caption": "Telegram"},
         {"shortcut": "Meta+M", "query": "time desktop", "resourceName": "Time", "caption": "Time Desktop"},
         {"shortcut": "Meta+K", "query": "толк", "resourceName": "ktalk", "caption": "Толк"},
-        {"shortcut": "Meta+C", "query": "calendar", "caption": "Google Calendar"},
         {"shortcut": "Meta+R", "query": "vscodium", "resourceName": "codium", "caption": "VSCodium"}
     ]
 };
