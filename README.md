@@ -75,6 +75,8 @@ Edit `contents/code/config.json` to configure your applications:
   - **resourceName** (optional): The X11 resource name of the window (use `xprop` to find it)
   - **caption** (optional): Match windows by their title/caption
   - **excludeCaptions** (optional): Array of caption patterns to exclude (useful for filtering specific tabs in browsers)
+  - **desktopOnly** (optional): Only toggle the app on the currently active desktop (useful when you keep separate app windows per virtual desktop)
+  - **toggle** (optional): Set to `false` to always bring the window to the front on the shortcut press instead of minimizing it when it's already focused (useful for browsers that share a shortcut across desktops)
 
 ### Finding Window Properties
 
@@ -169,4 +171,3 @@ kpackagetool6 -t KWin/Script --remove toggleTheApp
 kpackagetool6 -t KWin/Script --install .
 qdbus org.kde.KWin /Scripting org.kde.kwin.Scripting.loadScript "$(pwd)/contents/code/main.js"
 ```
-
