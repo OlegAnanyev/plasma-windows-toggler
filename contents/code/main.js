@@ -24,7 +24,15 @@ const shortcuts = appsToOpen.map(function (app) {
     });
 });
 
-function getToggleAppFunction(resName, caption, krunnerQuery, excludeCaptions, desktopOnly) {
+// KWin auto-activates the most recently used window on a desktop when you switch
+// to it. Remember that window so the toggle doesn't minimize it on the next press.
+let lastAutoActivatedWindowId = null;
+workspace.currentDesktopChanged.connect(function () {
+    const active = workspace.activeWindow;
+    lastAutoActivatedWindowId = active ? active.internalId : null;
+});
+
+function getToggleAppFunction(resName, caption, krunnerQuery, excludeCaptions, desktopOnly, toggleEnabled) {
     return function () {
         //console.error("TOGGLER – shortcut triggered for", resName || caption);
         const currentDesktop = workspace.currentDesktop;
@@ -49,9 +57,9 @@ function getToggleAppFunction(resName, caption, krunnerQuery, excludeCaptions, d
 
             // Desktop‑only filtering
             if (desktopOnly) {
-                // A window is on the current desktop if its desktops array is empty
-                // (on all desktops) or contains the current desktop number.
-                const onDesktop = client.desktops.length === 0 ||
+                // A window is on the current desktop if it's on all desktops
+                // or its desktop list contains the current desktop.
+                const onDesktop = client.onAllDesktops ||
                                     client.desktops.includes(currentDesktop);
                 if (!onDesktop) {
                     //console.error("TOGGLER – skipping window (wrong desktop):", client.caption);
@@ -63,8 +71,21 @@ function getToggleAppFunction(resName, caption, krunnerQuery, excludeCaptions, d
         });
 
         if (client) {
+            if (toggleEnabled === false) {
+                //console.error("TOGGLER – always bringing to front");
+                client.minimized = false;
+                workspace.activeWindow = client;
+                return;
+            }
+
+            const autoActivated = lastAutoActivatedWindowId !== null &&
+                                    lastAutoActivatedWindowId === client.internalId;
+            if (autoActivated) {
+                lastAutoActivatedWindowId = null;
+            }
+
             //console.error("TOGGLER – matched window:", client.caption, "minimized:", client.minimized, "active:", workspace.activeWindow === client);
-            if (workspace.activeWindow === client && !client.minimized) {
+            if (workspace.activeWindow === client && !client.minimized && !autoActivated) {
                 //console.error("TOGGLER – minimizing");
                 client.minimized = true;
             } else {
@@ -91,7 +112,8 @@ function registerAppShortcuts() {
                 shortcut.caption,
                 shortcut.query,
                 shortcut.excludeCaptions,
-                shortcut.desktopOnly
+                shortcut.desktopOnly,
+                shortcut.toggle !== false
             )
         );
     });
