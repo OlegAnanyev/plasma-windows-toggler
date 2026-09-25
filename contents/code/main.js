@@ -4,7 +4,7 @@ const config = {
     apps: [
         {"shortcut": "Meta+B", "query": "firefox", "resourceName": "firefox", "caption": "firefox", "excludeCaptions": ["Microsoft Teams", "MAX"], "desktopOnly": true},
         {"shortcut": "Meta+X", "query": "waterfox", "resourceName": "waterfox", "caption": "Waterfox"},
-        {"shortcut": "Meta+Z", "query": "zen", "resourceName": "zen", "caption": "Zen Browser"},
+        {"shortcut": "Meta+H", "query": "zen", "resourceName": "zen", "caption": "Zen Browser"},
         {"shortcut": "Meta+E", "query": "dolphin", "resourceName": "dolphin", "caption": "Dolphin"},
         {"shortcut": "Meta+T", "query": "kitty", "resourceName": "kitty", "caption": "Kitty"},
         {"shortcut": "Meta+V", "query": "vscode", "resourceName": "electron code-oss", "caption": "Code - OSS"},
