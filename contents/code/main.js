@@ -2,9 +2,9 @@
 const config = {
     shortcutIdPrefix: "AppToggler1",
     apps: [
-        {"shortcut": "Meta+B", "query": "firefox work", "resourceName": "firefox", "caption": "— WORK — Mozilla Firefox", "excludeCaptions": ["Microsoft Teams", "MAX"], "desktopOnly": true},
+        {"shortcut": "Meta+B", "query": "firefox work", "resourceName": "firefox1", "caption": "— WORK — Mozilla Firefox", "excludeCaptions": ["Microsoft Teams", "MAX"], "desktopOnly": true},
         {"shortcut": "Meta+X", "query": "waterfox", "resourceName": "waterfox", "caption": "Waterfox"},
-        {"shortcut": "Meta+H", "query": "firefox home", "resourceName": "firefox", "caption": "— HOME — Mozilla Firefox"},
+        {"shortcut": "Meta+H", "query": "firefox home", "resourceName": "firefox2", "caption": "— HOME — Mozilla Firefox"},
         {"shortcut": "Meta+E", "query": "dolphin", "resourceName": "dolphin", "caption": "Dolphin"},
         {"shortcut": "Meta+T", "query": "kitty", "resourceName": "kitty", "caption": "Kitty"},
         {"shortcut": "Meta+V", "query": "vscode", "resourceName": "electron code-oss", "caption": "Code - OSS"},
